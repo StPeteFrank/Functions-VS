@@ -6,7 +6,9 @@ namespace Functions_VS
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello Frank. Let get down with some funtion junction in VS!");
+
+            Console.ReadLine();
         }
     }
 }
