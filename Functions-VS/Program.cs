@@ -13,6 +13,8 @@ namespace Functions_VS
 
             Console.WriteLine(SumForEach(new int[] { 10, 20, 30, 40 }));
 
+            Console.WriteLine(SumArray(new int[] { 20, 40, 60, 80 }));
+
             Console.ReadLine();
         }
 
@@ -64,6 +66,20 @@ namespace Functions_VS
             }
             return sum;
         }
+
+        //
+
+        static int SumArray(int[] arr)
+        {
+            int sum = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                sum = sum + arr[i];
+            }
+            return sum;
+        }
+
+        //
 
 
 
