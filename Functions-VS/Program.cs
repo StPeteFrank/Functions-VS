@@ -15,6 +15,8 @@ namespace Functions_VS
 
             Console.WriteLine(SumArray(new int[] { 20, 40, 60, 80 }));
 
+            Console.WriteLine(SumOddArray(new int[] { 2, 3, 6, 5, 4, 7 }));
+
             Console.ReadLine();
         }
 
@@ -55,6 +57,13 @@ namespace Functions_VS
             return element;
         }
 
+        // or //
+
+         /*   static int SmallestInArray(int[] arr)
+        {
+            return arr.Min();
+        }*/
+
         //
 
         static int SumForEach(int[] arr)
@@ -80,6 +89,19 @@ namespace Functions_VS
         }
 
         //
+
+        static int SumOddArray(int[] arr)
+        {
+            int sum = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] % 2 == 1)
+                {
+                    sum += arr[i];
+                }
+            }
+            return sum;
+        }
 
 
 
