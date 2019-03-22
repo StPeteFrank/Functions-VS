@@ -1,5 +1,5 @@
-﻿using Functions_VS.Classes;
-using System;
+﻿using System;
+using System.Linq;
 
 namespace Functions_VS
 {
@@ -10,6 +10,8 @@ namespace Functions_VS
             Console.WriteLine(LargestInArray(new int[] { 2, 4, 6 } ));
 
             Console.WriteLine(SmallestInArray(new int[] { 10, 4, 7, 9, 3, -8, 6 }));
+
+            Console.WriteLine(SumForEach(new int[] { 10, 20, 30, 40 }));
 
             Console.ReadLine();
         }
@@ -29,6 +31,13 @@ namespace Functions_VS
             return element;
         }
 
+        // or //
+
+       /* static int LargestInArray(int[] arr)
+        {
+            return arr.Max();
+        }*/
+
         ///
 
         static int SmallestInArray(int[] arr)
@@ -42,6 +51,18 @@ namespace Functions_VS
                 }
             }
             return element;
+        }
+
+        //
+
+        static int SumForEach(int[] arr)
+        {
+            int sum = 0;
+            foreach(int num in arr)
+            {
+                sum += num;
+            }
+            return sum;
         }
 
 
