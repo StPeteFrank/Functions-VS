@@ -42,7 +42,7 @@ namespace Functions_VS
             return arr.Max();
         }*/
 
-        ///
+        //
 
         static int SmallestInArray(int[] arr)
         {
@@ -87,6 +87,15 @@ namespace Functions_VS
             }
             return sum;
         }
+
+        // or //
+
+        //
+
+       /* static int SumArray(int[] arr)
+        {
+            return arr.Sum();
+        }*/
 
         //
 
