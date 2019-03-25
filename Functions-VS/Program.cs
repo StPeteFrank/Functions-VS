@@ -113,12 +113,22 @@ namespace Functions_VS
 
         //
 
-        static int SumArray(int[] arr)
+       /* static int SumArray(int[] arr)
         {
             int sum = 0;
             for (int i = 0; i < arr.Length; i++)
             {
                 sum = sum + arr[i];
+            }
+            return sum;
+        }*/
+
+        static int SumArray(int[] a)
+        {
+            int sum = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                sum += a[i];
             }
             return sum;
         }
