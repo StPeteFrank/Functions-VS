@@ -49,24 +49,37 @@ namespace Functions_VS
 
         // or //
 
-       /* static int LargestInArray(int[] arr)
-        {
-            return arr.Max();
-        }*/
+        /* static int LargestInArray(int[] arr)
+         {
+             return arr.Max();
+         }*/
 
         //
 
-        static int SmallestInArray(int[] arr)
+        /* static int SmallestInArray(int[] arr)
+         {
+             int element = arr[0];
+             for (int i = 0; i < arr.Length; i++)
+             {
+                 if (element > arr[i])
+                 {
+                     element = arr[i];
+                 }
+             }
+             return element;
+         }*/
+
+        static int SmallestInArray(int[] a)
         {
-            int element = arr[0];
-            for (int i = 0; i < arr.Length; i++)
+            int b = a[0];
+            for (int i = 0; i < a.Length; i++)
             {
-                if (element > arr[i])
+                if (b > a[i])
                 {
-                    element = arr[i];
+                    b = a[i];
                 }
             }
-            return element;
+            return b;
         }
 
         // or //
