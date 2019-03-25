@@ -91,12 +91,22 @@ namespace Functions_VS
 
         //
 
-        static int SumForEach(int[] arr)
+       /* static int SumForEach(int[] arr)
         {
             int sum = 0;
             foreach(int num in arr)
             {
                 sum += num;
+            }
+            return sum;
+        }*/
+
+        static int SumForEach(int[] a)
+        {
+            int sum = 0;
+            foreach(int b in a)
+            {
+                sum += b;
             }
             return sum;
         }
