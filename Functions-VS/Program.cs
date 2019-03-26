@@ -9,7 +9,7 @@ namespace Functions_VS
         {
             Console.WriteLine(LargestInArray(new int[] { 2, 4, 6 } ));
 
-           // Console.WriteLine(SmallestInArray(new int[] { 10, 4, 7, 9, 3, -8, 6 }));
+           Console.WriteLine(SmallestInArray(new int[] { 10, 4, 7, 9, 3, -8, 6 }));
 
             // Console.WriteLine(SumForEach(new int[] { 10, 20, 30, 40 }));
 
@@ -69,7 +69,18 @@ namespace Functions_VS
              }
              return element;
          }*/
-
+         static int SmallestInArray(int[] a)
+        {
+            int b = a[0];
+            for(int i = 0; i < a.Length; i++)
+            {
+                if (b > a[i])
+                {
+                    b = a[i];
+                }
+            }
+            return b;
+        }
        
 
         // or //
