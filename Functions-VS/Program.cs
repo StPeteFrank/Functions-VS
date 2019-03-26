@@ -13,11 +13,11 @@ namespace Functions_VS
 
             Console.WriteLine(SumForEach(new int[] { 10, 20, 30, 40 }));
 
+            Console.WriteLine(SumArray(new int[] { 20, 40, 60, 80 }));
+
+             Console.WriteLine(SumOddArray(new int[] { 2, 3, 6, 5, 4, 7 }));
+
             //Console.WriteLine(FakeBin("announcement"));
-
-            // Console.WriteLine(SumArray(new int[] { 20, 40, 60, 80 }));
-
-            // Console.WriteLine(SumOddArray(new int[] { 2, 3, 6, 5, 4, 7 }));
 
             Console.ReadLine();
         }
@@ -107,7 +107,7 @@ namespace Functions_VS
         static int SumForEach(int[] a)
         {
             int sum = 0;
-            foreach (int b in a)
+            foreach(int b in a)
             {
                 sum += b;
             }
@@ -126,7 +126,15 @@ namespace Functions_VS
              return sum;
          }*/
 
-
+        static int SumArray(int[] a)
+        {
+            int sum = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                sum += a[i];
+            }
+            return sum;
+        }
 
         // or //
 
@@ -151,7 +159,18 @@ namespace Functions_VS
             }
             return sum;
         }*/
-
+        static int SumOddArray(int[] a)
+        {
+            int sum = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] % 2 == 1)
+                {
+                    sum += a[i];
+                }
+            }
+            return sum;
+        }
 
         //PEDA
         //I should run my parameter by each letter to verifier the value of them
