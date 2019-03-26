@@ -9,13 +9,13 @@ namespace Functions_VS
         {
             Console.WriteLine(LargestInArray(new int[] { 2, 4, 6 } ));
 
-            Console.WriteLine(SmallestInArray(new int[] { 10, 4, 7, 9, 3, -8, 6 }));
+           // Console.WriteLine(SmallestInArray(new int[] { 10, 4, 7, 9, 3, -8, 6 }));
 
-            Console.WriteLine(SumForEach(new int[] { 10, 20, 30, 40 }));
+            // Console.WriteLine(SumForEach(new int[] { 10, 20, 30, 40 }));
 
-            Console.WriteLine(SumArray(new int[] { 20, 40, 60, 80 }));
+            // Console.WriteLine(SumArray(new int[] { 20, 40, 60, 80 }));
 
-            Console.WriteLine(SumOddArray(new int[] { 2, 3, 6, 5, 4, 7 }));
+            // Console.WriteLine(SumOddArray(new int[] { 2, 3, 6, 5, 4, 7 }));
 
             Console.ReadLine();
         }
@@ -34,12 +34,13 @@ namespace Functions_VS
             }
             return element;
         }*/
-      static int LargestInArray(int[] a)
+     
+        static int LargestInArray(int[] a)
         {
             int b = a[0];
             for (int i = 0; i < a.Length; i++)
             {
-                if ( b < a[i])
+                if (b < a[i])
                 {
                     b = a[i];
                 }
@@ -69,18 +70,7 @@ namespace Functions_VS
              return element;
          }*/
 
-        static int SmallestInArray(int[] a)
-        {
-            int b = a[0];
-            for (int i = 0; i < a.Length; i++)
-            {
-                if (b > a[i])
-                {
-                    b = a[i];
-                }
-            }
-            return b;
-        }
+       
 
         // or //
 
@@ -101,15 +91,7 @@ namespace Functions_VS
             return sum;
         }*/
 
-        static int SumForEach(int[] a)
-        {
-            int sum = 0;
-            foreach(int b in a)
-            {
-                sum += b;
-            }
-            return sum;
-        }
+
 
         //
 
@@ -123,15 +105,7 @@ namespace Functions_VS
             return sum;
         }*/
 
-        static int SumArray(int[] a)
-        {
-            int sum = 0;
-            for (int i = 0; i < a.Length; i++)
-            {
-                sum += a[i];
-            }
-            return sum;
-        }
+       
 
         // or //
 
@@ -156,18 +130,7 @@ namespace Functions_VS
             }
             return sum;
         }*/
-        static int SumOddArray(int[] a)
-        {
-            int sum = 0;
-            for (int i = 0; i < a.Length; i++)
-            {
-                if ( a[i] % 2 == 1)
-                {
-                    sum += a[i];
-                }
-            }
-            return sum;
-        }
+       
 
        
 
