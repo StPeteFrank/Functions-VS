@@ -11,7 +11,7 @@ namespace Functions_VS
 
            Console.WriteLine(SmallestInArray(new int[] { 10, 4, 7, 9, 3, -8, 6 }));
 
-            // Console.WriteLine(SumForEach(new int[] { 10, 20, 30, 40 }));
+            Console.WriteLine(SumForEach(new int[] { 10, 20, 30, 40 }));
 
             // Console.WriteLine(SumArray(new int[] { 20, 40, 60, 80 }));
 
@@ -102,30 +102,38 @@ namespace Functions_VS
             return sum;
         }*/
 
-
+        static int SumForEach(int[] a)
+        {
+            int sum = 0;
+            foreach (int b in a)
+            {
+                sum += b;
+            }
+            return sum;
+        }
 
         //
 
-       /* static int SumArray(int[] arr)
-        {
-            int sum = 0;
-            for (int i = 0; i < arr.Length; i++)
-            {
-                sum = sum + arr[i];
-            }
-            return sum;
-        }*/
+        /* static int SumArray(int[] arr)
+         {
+             int sum = 0;
+             for (int i = 0; i < arr.Length; i++)
+             {
+                 sum = sum + arr[i];
+             }
+             return sum;
+         }*/
 
-       
+
 
         // or //
 
         //
 
-       /* static int SumArray(int[] arr)
-        {
-            return arr.Sum();
-        }*/
+        /* static int SumArray(int[] arr)
+         {
+             return arr.Sum();
+         }*/
 
         //
 
@@ -141,9 +149,34 @@ namespace Functions_VS
             }
             return sum;
         }*/
-       
 
-       
+        static string FakeBin(string x)
+        {
+            var total = x.Length;
+            var y = "";
+            for (int i = 0; i < total; i++)
+            {
+                if (x[i] < '5')
+                {
+                    y += '0';
+                    Console.WriteLine("I am less than 5");
+
+                }
+                else
+                {
+                    y += '1';
+                    Console.WriteLine("I am major than 5");
+                }
+
+
+                Console.WriteLine(x[i])
+
+              ;
+            }
+
+            return y;
+        }
+
 
     }
 }
