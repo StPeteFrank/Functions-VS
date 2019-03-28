@@ -16,10 +16,10 @@ namespace Functions_VS
             return sum;
         }*/
 
-        public int SumArray(int[] a)
+       public int SumArray(int[] a)
         {
             int sum = 0;
-            for (int i = 0; i < a.Length; i++)
+            for ( int i = 0; i < a.Length; i++)
             {
                 sum = sum + a[i];
             }

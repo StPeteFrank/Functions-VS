@@ -6,7 +6,7 @@ namespace Functions_VS.Classes
 {
     public class SumOddArrayForLoop
     {
-       public int SumOddArray(int[] arr)
+       /*public int SumOddArray(int[] arr)
        {
            int sum = 0;
            for (int i = 0; i < arr.Length; i++)
@@ -17,7 +17,20 @@ namespace Functions_VS.Classes
                }
            }
            return sum;
-       }
+       }*/
+
+        public int SumOddArray(int[] a)
+        {
+            int sum = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] % 2 == 1)
+                {
+                    sum = sum + a[i];
+                }
+            }
+            return sum;
+        }
 
     }
 }
