@@ -9,7 +9,7 @@ namespace Functions_VS.Classes
     {
 
         // Method
-        public int Largest(int[] arr)
+        /*public int Largest(int[] arr)
 
         {
             int element = arr[0];
@@ -21,8 +21,20 @@ namespace Functions_VS.Classes
                }
             }
                return element;
-        }
+        }*/
 
+       public int Largest(int[] a)
+        {
+            int b = a[0];
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (b < a[i])
+                {
+                    b = a[i];
+                }
+            }
+            return b;
+        }
 
         // or //
 
@@ -32,9 +44,6 @@ namespace Functions_VS.Classes
         }*/
 
         //
-
-        
-
 
     }
 }

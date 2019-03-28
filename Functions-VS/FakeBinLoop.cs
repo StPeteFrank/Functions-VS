@@ -12,7 +12,7 @@ namespace Functions_VS
         //if n is less than 5 the output is 0
         //if n is major or equals than 5 the output is 1
 
-         public string FakeBin(string x)
+         /*public string FakeBin(string x)
          {
              var y = "";
              for (var i = 0; i < x.Length; i++)
@@ -33,7 +33,7 @@ namespace Functions_VS
                   // Console.WriteLine(x[i]);
              }
                      return y;
-         }
+         }*/
 
         // or //
 
