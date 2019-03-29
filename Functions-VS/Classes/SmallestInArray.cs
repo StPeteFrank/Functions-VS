@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Functions_VS.Classes
 {
-    public class SmallestInArray
+    /*public class SmallestInArray
     { 
         public int Smallest(int[] a)
         {
@@ -17,7 +17,23 @@ namespace Functions_VS.Classes
                 }
             }
             return b;
+        }*/
+
+    public class SmallestInArray
+    {
+        public int Smallest(int [] a)
+        {
+            int b = a[0];
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (b > a[i])
+                {
+                    b = a[i];
+                }
+            }
+            return b;
         }
+    
 
         // or //
 
