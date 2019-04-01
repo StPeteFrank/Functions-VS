@@ -18,9 +18,7 @@ namespace Functions_VS.Classes
             }
             return sum;
         }
+
+
     }
-
-
-
-    
 }

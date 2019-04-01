@@ -6,7 +6,22 @@ using System.Text;
 namespace Functions_VS.Classes
 {
 
-    public class LargestInArray
+    /*public class LargestInArray
+    {
+        public int Largest(int[] a)  
+        {
+            int b = a[0];
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (b < a[i])
+                {
+                    b = a[i];
+                }
+            }
+            return b;
+        }*/
+    
+   public class LargestInArray
     {
         public int Largest(int[] a)
         {
@@ -20,8 +35,7 @@ namespace Functions_VS.Classes
             }
             return b;
         }
-    
-
+    }
 
 
         // or //
@@ -34,5 +48,5 @@ namespace Functions_VS.Classes
         //
 
     }
-}
+
 
