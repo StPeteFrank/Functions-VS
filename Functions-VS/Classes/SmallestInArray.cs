@@ -6,7 +6,7 @@ namespace Functions_VS.Classes
 {
     public class SmallestInArray
     {
-        public int Smallest(int [] a)
+        public int Smallest(int[] a)
         {
             int b = a[0];
             for (int i = 0; i < a.Length; i++)
@@ -18,13 +18,15 @@ namespace Functions_VS.Classes
             }
             return b;
         }
+    }
+
     
 
         // or //
 
-        /* public int SmallestInArray(int[] a)
+        /* public int Smallest(int[] a)
         {
             return a.Min();
         }*/
     }
-}
+
