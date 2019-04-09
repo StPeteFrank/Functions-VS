@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Functions_VS.Classes
 {
-    public class SumOddArrayForLoop
+   /* public class SumOddArrayForLoop
     {
         public int SumOddArray(int[] a)
         {
@@ -18,6 +18,22 @@ namespace Functions_VS.Classes
             }
             return sum;
         }
+    }*/
+    public class SumOddArrayForLoop
+    {
+        public int SumOddArray(int[] a)
+        {
+            int sum = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(a[i] % 2 == 1)
+                {
+                    sum += a[i];
+                }
+            }
+            return sum;
+        }
     }
 
 }
+//How to use .Sum with a condition of must be odd...
