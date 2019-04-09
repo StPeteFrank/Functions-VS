@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Functions_VS.Classes
 {
-   public class LargestInArray
+    public class LargestInArray
     {
         public int Largest(int[] a)
         {
