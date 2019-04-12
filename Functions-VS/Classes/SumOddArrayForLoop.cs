@@ -22,4 +22,3 @@ namespace Functions_VS.Classes
 
 }
 //How to use .Sum with a condition of must be odd...
-//johnwuzheres
