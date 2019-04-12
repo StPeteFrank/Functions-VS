@@ -18,6 +18,8 @@ namespace Functions_VS
 
             Console.WriteLine(new SumOddArrayForLoop().SumOddArray(new int[] { 2, 3, 6, 5, 7 }));
 
+            Console.WriteLine(new KataSquareSum().SquareSum(new int[] { 2, 4, 5 }));
+
           // Console.WriteLine(new FakeBinLoop().FakeBin(new string ("announcement")));
 
             //How is it possible to allow user to input ints and output the largest int in array? 
