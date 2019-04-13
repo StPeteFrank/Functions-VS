@@ -16,9 +16,9 @@ namespace Functions_VS
 
             Console.WriteLine(new SumArrayForLoop().SumArray(new int[] { 20, 40, 60, 80 }));
 
-            // Console.WriteLine(new SumOddArrayForLoop().SumOddArray(new int[] { 2, 3, 6, 5, 7 }));
             Console.WriteLine(new SumOddArrayForLoop().SumOddArray(new int[] { 2, 3, 6, 5, 7 }));
 
+            //Console.WriteLine(new KataSquareSum().SquareSum(new int[] { 2, 4, 5 }));
             Console.WriteLine(new KataSquareSum().SquareSum(new int[] { 2, 4, 5 }));
 
           // Console.WriteLine(new FakeBinLoop().FakeBin(new string ("announcement")));
