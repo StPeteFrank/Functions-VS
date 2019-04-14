@@ -20,7 +20,7 @@ namespace Functions_VS
 
             Console.WriteLine(new KataSquareSum().SquareSum(new int[] { 2, 4, 5 }));
 
-           // Console.WriteLine(new KataRemoveString().Remove(new string ("Hi!!!")));
+           // Console.WriteLine(new KataRemoveString().Remove(new string ( "Hi!!!" )));
 
            // Console.WriteLine(new FakeBinLoop().FakeBin(new string("unnanswered")));
 

@@ -9,7 +9,7 @@ namespace Functions_VS
             public static string Remove(string s)
             {
                 return s.Replace("!", "") + "!";
-        }
+            }
         
     }
 }
